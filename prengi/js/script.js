@@ -56,7 +56,7 @@ $('form').submit(function(e) {
     e.preventDefault();
     $.ajax({
         type: "POST",
-        url: "mailer/smart.php",
+        url: "mail.php",
         data: $(this).serialize()
     }).done(function() {
         $(this).find("input").val("");
